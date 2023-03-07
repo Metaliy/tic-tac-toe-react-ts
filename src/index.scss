@@ -1,0 +1,92 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-width: 400px;
+  background-image: url(./shareds/img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.computerWinBacklight_0 {
+  animation: computerWinnerLights 2s linear infinite;
+}
+
+.computerWinBacklight_1 {
+  animation: computerWinnerLights 2s linear infinite;
+  animation-delay: 0.3s;
+}
+
+.computerWinBacklight_2 {
+  animation: computerWinnerLights 2s linear infinite;
+  animation-delay: 0.6s;
+}
+
+@keyframes computerWinnerLights {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(174, 0, 255, 0);
+    
+  }
+  25% {
+    box-shadow: 0 0 10px 5px rgba(174, 0, 255, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px 5px rgba(174, 0, 255, 0);
+    
+  }
+}
+
+.userWinBacklight_0 {
+  animation: userWinnerLights 2s linear infinite;
+}
+
+.userWinBacklight_1 {
+  animation: userWinnerLights 2s linear infinite;
+  animation-delay: 0.3s;
+}
+
+.userWinBacklight_2 {
+  animation: userWinnerLights 2s linear infinite;
+  animation-delay: 0.6s;
+}
+
+@keyframes userWinnerLights {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(174, 0, 255, 0);
+    
+  }
+  25% {
+    box-shadow: 0 0 10px 5px rgba(0, 255, 255, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px 5px rgba(174, 0, 255, 0);
+    
+  }
+}
