@@ -14,7 +14,7 @@ function ResetButton({styles, disabled, winner}: BoardCellProps): JSX.Element {
 
 
   return (
-    <button onClick={() => dispatch(resetGame())} className={buttonStyles} disabled={disabled}><img src="src\shareds\img\reboot.svg"/></button>
+    <button onClick={() => dispatch(resetGame())} className={buttonStyles} disabled={disabled}><img src='../img/reboot.svg'/></button>
   )
 }
 
